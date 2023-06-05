@@ -16,9 +16,10 @@ const Footer = () => {
         }
     }
     return (
-        <footer>
+        <footer class="text-center p-2 py-4 bg-cstmGreen text-white">
             {/* Zde můžete vložit obsah patičky */}
-            <p class="text-center">&copy; <span>{frstYear + showYear()}</span>&nbsp;Ekonomika | Jan Chvojka</p>
+            <p>&copy; <span>{frstYear + showYear()}</span>&nbsp;Ekonomika | Jan Chvojka</p>
+            <p>Všechny informace jsou z prezentací paní učitelky Bouškové, pro získání těchto materiálů kontaktuje ji.</p>
         </footer>
     );
 }

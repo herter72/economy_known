@@ -5,8 +5,11 @@ module.exports = {
     extend: {
       colors: {
         cstmGreen: '#60A561',
-      }
+      },
     },
+    minHeight: {
+      '90vh': '90vh',
+    }
   },
   plugins: [],
 }

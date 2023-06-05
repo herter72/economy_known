@@ -12,6 +12,63 @@ code {
     monospace;
 }
 
-*{
+html {
+  --primary: #60A561;
+}
+
+* {
   margin: 0;
+}
+
+ul li::before {
+  content: "\25AA";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: var(--primary);
+  /* Change the color */
+  font-weight: bold;
+  font-size: 25px;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 0.7em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -0.5em;
+  /* Also needed for space (tweak if needed) */
+}
+
+h1 {
+  text-shadow: 2px 2px 8px black;
+}
+
+h2:after {
+  content: '';
+  position: absolute;
+  width: 220px;
+  height: 4px;
+  display: flex;
+  margin-top: 5px;
+  background-color: var(--primary);
+}
+
+.podtrh:after {
+  content: '';
+  position: absolute;
+  width: 220px;
+  height: 4px;
+  display: flex;
+  margin-top: 5px;
+  background-color: var(--primary);
+}
+
+
+
+form#quizForm {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 700px) {
+  form#quizForm {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
