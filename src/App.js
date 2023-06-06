@@ -1,8 +1,8 @@
 // App.js
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route, Routes } from 'react-router-dom';
-import Test from './Test';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Test from './test';
 import Home from './home';
 
 const App = () => {

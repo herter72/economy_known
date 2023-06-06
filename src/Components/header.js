@@ -1,5 +1,6 @@
 // header.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -11,7 +12,7 @@ const Header = () => {
         <nav class="w-4/5">
           <ul class="flex w-full justify-end h-full">
             <li class="h-full flex justify-center px-1"><a href="/" class="p-3">Domů</a></li>
-            <li class="h-full flex justify-center px-1"><a href="/test" class="p-3">Test</a></li>
+            <li class="h-full flex justify-center px-1"><Link to="/test" class="p-3">Test</Link></li>
           </ul>
         </nav>
       </section>

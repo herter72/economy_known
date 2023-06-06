@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from './Components/header';
 import Footer from './Components/footer';
 
-const Test = () => {
+export default function Test() {
     const [result, setResult] = useState('');
 
     const [questions, setQuestions] = useState([
@@ -104,4 +104,4 @@ const Test = () => {
     );
 };
 
-export default Test;
+
